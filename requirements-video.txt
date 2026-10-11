@@ -1,0 +1,3 @@
+# Optional: render the demo video (clearpath3d_api.demo_video). Tested versions.
+imageio==2.38.1
+imageio-ffmpeg==0.6.0

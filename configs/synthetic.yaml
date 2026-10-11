@@ -1,0 +1,27 @@
+# Starting hypotheses for the synthetic scenes (to be validated, not results).
+depth:
+  min_depth_m: 0.2
+  max_depth_m: 8.0
+preprocess:
+  voxel_m: 0.03
+  outlier_removal: false  # ablation (M1): SOR erased thin table legs and far floor; synthetic data has no flying pixels
+  outlier_nb_neighbors: 20
+  outlier_std_ratio: 2.0
+  normals_radius_factor: 3.0
+ground:
+  distance_threshold_m: 0.03
+  max_tilt_deg: 12.0
+  height_tolerance_m: 0.10
+  min_inliers: 200
+  min_support_area_m2: 0.25
+  area_cell_m: 0.05
+  max_candidates: 4
+  ransac_iterations: 400
+  seed: 0
+obstacles:
+  min_height_m: 0.04
+  max_height_m: 2.0
+  max_range_m: 6.0
+  dbscan_eps_m: 0.08
+  dbscan_min_points: 10
+  min_cluster_points: 15

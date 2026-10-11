@@ -1,0 +1,27 @@
+{
+  "scenes": 10,
+  "m1_ground_found": 10,
+  "m1_precision_median": 0.9964,
+  "m1_recall_median": 0.9915,
+  "m3_false_free_total": 0,
+  "m3_unsafe_total": 0,
+  "m3_coverage_median": 0.62825,
+  "plan_narrow_door_scenes": 3,
+  "plan_narrow_door_wrongly_ok": 0,
+  "plan_passable_door_scenes": 7,
+  "plan_passable_ok": 7,
+  "plan_passable_failure_causes": [],
+  "plan_gt_collisions": 0,
+  "m5_nbv_minus_random_mean": 0.1259,
+  "m5_bootstrap95_over_scenes": [
+    0.0886,
+    0.1604
+  ],
+  "m5_nbv_better_scenes": 10,
+  "m5_nbv_false_free_max": 0,
+  "m5_nbv_unsafe_max": 0,
+  "m5_random_unsafe_max": 0,
+  "split": "dev",
+  "config_hash": "e5e55d9eeb03099d",
+  "code_fingerprint": "169668836189bf6b"
+}

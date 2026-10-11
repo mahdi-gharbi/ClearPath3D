@@ -1,0 +1,96 @@
+{
+  "sequence_id": "proc_109",
+  "frame_id": "000000",
+  "timestamp_s": 0.0,
+  "config_hash": "e5e55d9eeb03099d",
+  "pose_status": "supplied",
+  "ground_status": "found",
+  "output_frame": "map",
+  "ground_plane": {
+    "frame_id": "map",
+    "normal": [
+      -0.000752,
+      -0.00083,
+      0.999999
+    ],
+    "offset": 0.003972,
+    "inlier_count": 9214,
+    "residual_m": 0.00425,
+    "support_area_m2": 5.325,
+    "tilt_deg": 0.064
+  },
+  "detections": [
+    {
+      "detection_id": 0,
+      "frame_id": "map",
+      "center_m": [
+        2.7647,
+        3.3493,
+        0.7464
+      ],
+      "visible_extent_m": [
+        2.7746,
+        1.7651,
+        1.4102
+      ],
+      "min_m": [
+        1.3774,
+        2.4668,
+        0.0413
+      ],
+      "max_m": [
+        4.152,
+        4.2319,
+        1.4516
+      ],
+      "point_count": 12706,
+      "semantic_label": null
+    },
+    {
+      "detection_id": 1,
+      "frame_id": "map",
+      "center_m": [
+        3.2058,
+        2.6833,
+        0.1347
+      ],
+      "visible_extent_m": [
+        0.4865,
+        0.263,
+        0.1872
+      ],
+      "min_m": [
+        2.9626,
+        2.5518,
+        0.0411
+      ],
+      "max_m": [
+        3.4491,
+        2.8148,
+        0.2283
+      ],
+      "point_count": 356,
+      "semantic_label": null
+    }
+  ],
+  "tracks": [],
+  "occupancy_version": 0,
+  "warnings": [],
+  "timings_ms": {
+    "backproject": 5.747,
+    "voxel_downsample": 44.164,
+    "outliers": 0.024,
+    "normals": 36.741,
+    "ground": 237.475,
+    "cluster": 86.483,
+    "boxes": 4.184
+  },
+  "stats": {
+    "valid_depth_fraction": 0.99017,
+    "points_backprojected": 76045.0,
+    "points_downsampled": 22701.0,
+    "points_outlier": 0.0,
+    "points_ground": 9214.0,
+    "points_obstacle": 13062.0
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "sequence": "rgbd_dataset_freiburg2_pioneer_360",
+  "frames": 830,
+  "license": "CC BY 4.0 (TUM RGB-D benchmark). Cite: Sturm et al., IROS 2012. Not redistributed here.",
+  "reference_poses": "motion capture (TUM ground truth)",
+  "protocol": "Real-data benchmark on a TUM RGB-D robot sequence (motion-capture poses, no scene geometry ground truth).\n\nWhat can be measured honestly on real data:\n1. odometry (ICP) against motion-capture poses: ATE (first-frame and best-fit SE(3) alignment) and RPE;\n2. ground detection per frame against the floor plane fitted in the mocap world (normal angle, height);\n3. map safety *relative to* the map built with mocap poses: cells the ICP-pose map calls FREE while the\n   mocap-pose map calls them OCCUPIED (a proxy for false free; the mocap map itself is not ground truth);\n4. TSDF surface agreement between mocap-pose and ICP-pose reconstructions.",
+  "odometry": {
+    "icp_full": {
+      "first_frame_alignment": {
+        "alignment": "first frame",
+        "frames_estimated": 1,
+        "frames_total": 830,
+        "ate_rmse_m": 0.0,
+        "ate_max_m": 0.0,
+        "rpe_trans_rmse_m": null,
+        "rpe_rot_rmse_deg": null
+      },
+      "best_fit": {
+        "ate_rmse_m": null
+      },
+      "tracking_lost": true,
+      "rejection_reasons": {
+        "degenerate": 10
+      },
+      "ms_per_frame": 98.3
+    },
+    "icp_full_range8_posthoc": {
+      "first_frame_alignment": {
+        "alignment": "first frame",
+        "frames_estimated": 40,
+        "frames_total": 830,
+        "ate_rmse_m": 0.0374,
+        "ate_max_m": 0.1493,
+        "rpe_trans_rmse_m": 0.0107,
+        "rpe_rot_rmse_deg": 0.462
+      },
+      "best_fit": {
+        "alignment": "best-fit SE(3) (Umeyama, no scale)",
+        "ate_rmse_m": 0.0286,
+        "ate_max_m": 0.1044
+      },
+      "tracking_lost": true,
+      "rejection_reasons": {
+        "translation": 10
+      },
+      "ms_per_frame": 460.6
+    },
+    "no_gates": {
+      "first_frame_alignment": {
+        "alignment": "first frame",
+        "frames_estimated": 825,
+        "frames_total": 830,
+        "ate_rmse_m": 4.2992,
+        "ate_max_m": 7.0092,
+        "rpe_trans_rmse_m": 0.0689,
+        "rpe_rot_rmse_deg": 2.063
+      },
+      "best_fit": {
+        "alignment": "best-fit SE(3) (Umeyama, no scale)",
+        "ate_rmse_m": 1.8308,
+        "ate_max_m": 4.0272
+      },
+      "tracking_lost": false,
+      "rejection_reasons": {
+        "translation": 5,
+        "fitness": 1,
+        "rotation": 1
+      },
+      "ms_per_frame": 1287.9
+    },
+    "no_gates_range8_posthoc": {
+      "first_frame_alignment": {
+        "alignment": "first frame",
+        "frames_estimated": 40,
+        "frames_total": 830,
+        "ate_rmse_m": 0.0374,
+        "ate_max_m": 0.1493,
+        "rpe_trans_rmse_m": 0.0107,
+        "rpe_rot_rmse_deg": 0.462
+      },
+      "best_fit": {
+        "alignment": "best-fit SE(3) (Umeyama, no scale)",
+        "ate_rmse_m": 0.0286,
+        "ate_max_m": 0.1044
+      },
+      "tracking_lost": true,
+      "rejection_reasons": {
+        "translation": 10
+      },
+      "ms_per_frame": 686.4
+    }
+  },
+  "ground": {
+    "frames_tested": 83,
+    "found": 83,
+    "angle_deg_median": 1.186,
+    "height_err_m_median": 0.0196,
+    "height_err_m_p95": 0.0355,
+    "reference": "floor plane fitted in the mocap world (manifest gravity_check)"
+  },
+  "maps": {
+    "mocap": {
+      "counts": {
+        "occupied": 14045,
+        "free": 38334,
+        "unknown": 55201
+      },
+      "s_per_frame": 4.82
+    },
+    "icp_full_range8_posthoc": {
+      "counts": {
+        "occupied": 4209,
+        "free": 346,
+        "unknown": 103025
+      },
+      "s_per_frame": 0.849,
+      "free_where_mocap_map_occupied": 0,
+      "free_where_mocap_map_unknown": 0,
+      "agreement_on_cells_known_in_both": 0.9838
+    },
+    "no_gates_range8_posthoc": {
+      "counts": {
+        "occupied": 4209,
+        "free": 346,
+        "unknown": 103025
+      },
+      "s_per_frame": 0.847,
+      "free_where_mocap_map_occupied": 0,
+      "free_where_mocap_map_unknown": 0,
+      "agreement_on_cells_known_in_both": 0.9838
+    }
+  },
+  "plan_demo_mocap_map": {
+    "start": [
+      -1.82,
+      -0.756
+    ],
+    "goal": [
+      4.375,
+      5.025
+    ],
+    "cause": "ok",
+    "length_m": 8.7656,
+    "note": "recomputed after fixing the goal choice (farthest REACHABLE cell); map identical in method"
+  },
+  "tsdf_icp_vs_mocap": {
+    "icp_variant": "icp_full_range8_posthoc",
+    "frames_integrated_icp": 20,
+    "median_m": 0.0063,
+    "p95_m": 0.0303,
+    "frac_below_5cm": 0.9913,
+    "note": "distance from ICP-pose surface to mocap-pose surface (not to the true scene)"
+  }
+}

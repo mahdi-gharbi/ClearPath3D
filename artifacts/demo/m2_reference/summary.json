@@ -1,0 +1,232 @@
+{
+  "room_scan": {
+    "report": {
+      "sequence": "room_scan",
+      "pose_source": "supplied",
+      "pose_note": "poses supplied by the dataset/simulator; this run does not evaluate odometry",
+      "params": {
+        "voxel_m": 0.02,
+        "sdf_trunc_m": 0.08,
+        "max_depth_m": 6.0,
+        "keyframe_translation_m": 0.1,
+        "keyframe_rotation_deg": 5.0,
+        "use_keyframes": true
+      },
+      "tsdf": {
+        "frames_seen": 31,
+        "frames_integrated": 31,
+        "frames_rejected_no_pose": 0,
+        "integrated_frame_ids": [
+          "000000",
+          "000001",
+          "000002",
+          "000003",
+          "000004",
+          "000005",
+          "000006",
+          "000007",
+          "000008",
+          "000009",
+          "000010",
+          "000011",
+          "000012",
+          "000013",
+          "000014",
+          "000015",
+          "000016",
+          "000017",
+          "000018",
+          "000019",
+          "000020",
+          "000021",
+          "000022",
+          "000023",
+          "000024",
+          "000025",
+          "000026",
+          "000027",
+          "000028",
+          "000029",
+          "000030"
+        ],
+        "integrate": {
+          "n": 31,
+          "p50_ms": 10.724,
+          "p95_ms": 20.47,
+          "max_ms": 21.78
+        },
+        "load": {
+          "n": 31,
+          "p50_ms": 14.722,
+          "p95_ms": 20.204,
+          "max_ms": 21.546
+        },
+        "extract_ms": 402.768,
+        "total_ms": 1227.1,
+        "mesh_vertices": 108783,
+        "mesh_triangles": 210142,
+        "cloud_points": 106132
+      },
+      "union_baseline": {
+        "frames_used": 31,
+        "raw_points": 2357011,
+        "points": 229687,
+        "total_ms": 3191.1
+      },
+      "memory": {
+        "before": {
+          "rss_mb": 117.0,
+          "peak_working_set_mb": 140.4
+        },
+        "after_tsdf": {
+          "rss_mb": 298.4,
+          "peak_working_set_mb": 299.5
+        },
+        "after_union": {
+          "rss_mb": 309.8,
+          "peak_working_set_mb": 765.9
+        }
+      },
+      "hardware": {
+        "cpu": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+        "logical_cpus": 8,
+        "ram_gb": 19.8,
+        "os": "Windows 10"
+      }
+    },
+    "evaluation": {
+      "pose_source": "supplied",
+      "protocol": [
+        "Protocol:",
+        "- accuracy: unsigned distance from each reconstructed point to the GT mesh (all static objects at t=0);",
+        "- completeness: reference = GT surface points actually *observed* by the integrated frames (clean GT",
+        "  depth back-projected, 2 cm voxels); distance from each reference point to the nearest"
+      ],
+      "tsdf": {
+        "accuracy": {
+          "n": 106132,
+          "mean_m": 0.0046,
+          "median_m": 0.002,
+          "p95_m": 0.0117,
+          "frac_below_2cm": 0.9792,
+          "frac_below_5cm": 0.9982
+        },
+        "completeness": {
+          "n": 159885,
+          "mean_m": 0.0044,
+          "median_m": 0.0031,
+          "p95_m": 0.0111,
+          "frac_below_2cm": 0.9938,
+          "frac_below_5cm": 0.9994
+        }
+      },
+      "tsdf_mesh_vertices": {
+        "accuracy": {
+          "n": 108783,
+          "mean_m": 0.0048,
+          "median_m": 0.0021,
+          "p95_m": 0.0129,
+          "frac_below_2cm": 0.9726,
+          "frac_below_5cm": 0.9966
+        },
+        "completeness": {
+          "n": 159885,
+          "mean_m": 0.0043,
+          "median_m": 0.0031,
+          "p95_m": 0.0109,
+          "frac_below_2cm": 0.9959,
+          "frac_below_5cm": 0.9995
+        }
+      },
+      "union_baseline": {
+        "accuracy": {
+          "n": 229687,
+          "mean_m": 0.0123,
+          "median_m": 0.006,
+          "p95_m": 0.0438,
+          "frac_below_2cm": 0.7361,
+          "frac_below_5cm": 0.9768
+        },
+        "completeness": {
+          "n": 159885,
+          "mean_m": 0.0055,
+          "median_m": 0.0051,
+          "p95_m": 0.0102,
+          "frac_below_2cm": 0.9997,
+          "frac_below_5cm": 1.0
+        }
+      }
+    }
+  },
+  "redwood_sample": {
+    "report": {
+      "sequence": "redwood_sample",
+      "pose_source": "supplied",
+      "pose_note": "poses supplied by the dataset/simulator; this run does not evaluate odometry",
+      "params": {
+        "voxel_m": 0.0078125,
+        "sdf_trunc_m": 0.04,
+        "max_depth_m": 4.0,
+        "keyframe_translation_m": 0.1,
+        "keyframe_rotation_deg": 5.0,
+        "use_keyframes": false
+      },
+      "tsdf": {
+        "frames_seen": 5,
+        "frames_integrated": 5,
+        "frames_rejected_no_pose": 0,
+        "integrated_frame_ids": [
+          "000000",
+          "000001",
+          "000002",
+          "000003",
+          "000004"
+        ],
+        "integrate": {
+          "n": 5,
+          "p50_ms": 40.125,
+          "p95_ms": 101.492,
+          "max_ms": 116.451
+        },
+        "load": {
+          "n": 5,
+          "p50_ms": 21.961,
+          "p95_ms": 23.034,
+          "max_ms": 23.176
+        },
+        "extract_ms": 427.89,
+        "total_ms": 813.5,
+        "mesh_vertices": 147956,
+        "mesh_triangles": 280670,
+        "cloud_points": 141137
+      },
+      "union_baseline": {
+        "frames_used": 5,
+        "raw_points": 1340711,
+        "points": 223632,
+        "total_ms": 1675.7
+      },
+      "memory": {
+        "before": {
+          "rss_mb": 118.4,
+          "peak_working_set_mb": 765.9
+        },
+        "after_tsdf": {
+          "rss_mb": 376.6,
+          "peak_working_set_mb": 765.9
+        },
+        "after_union": {
+          "rss_mb": 387.6,
+          "peak_working_set_mb": 765.9
+        }
+      },
+      "hardware": {
+        "cpu": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+        "logical_cpus": 8,
+        "ram_gb": 19.8,
+        "os": "Windows 10"
+      }
+    },
+    "evaluation": "no ground truth; see tests/integration/test_redwood.py for convention checks"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "ground_candidates": [
+    {
+      "normal": [
+        -0.0025,
+        -0.001,
+        1.0
+      ],
+      "offset": 0.0044,
+      "inliers": 10254,
+      "area_m2": 5.77,
+      "tilt_deg": 0.15,
+      "height_m": -0.004,
+      "accepted": true,
+      "reasons": []
+    },
+    {
+      "normal": [
+        -0.6428,
+        -0.766,
+        0.0024
+      ],
+      "offset": 2.4173,
+      "inliers": 7017,
+      "area_m2": 3.598,
+      "tilt_deg": 89.86,
+      "height_m": null,
+      "accepted": false,
+      "reasons": [
+        "tilt 89.9 deg > 12.0",
+        "height n/a not within 0.1 m of 0.0 m"
+      ]
+    },
+    {
+      "normal": [
+        0.7691,
+        -0.6392,
+        0.0003
+      ],
+      "offset": -3.5182,
+      "inliers": 4917,
+      "area_m2": 2.38,
+      "tilt_deg": 89.98,
+      "height_m": null,
+      "accepted": false,
+      "reasons": [
+        "tilt 90.0 deg > 12.0",
+        "height n/a not within 0.1 m of 0.0 m"
+      ]
+    },
+    {
+      "normal": [
+        -0.7697,
+        0.6384,
+        0.0002
+      ],
+      "offset": 3.4798,
+      "inliers": 698,
+      "area_m2": 1.283,
+      "tilt_deg": 89.99,
+      "height_m": null,
+      "accepted": false,
+      "reasons": [
+        "tilt 90.0 deg > 12.0",
+        "height n/a not within 0.1 m of 0.0 m"
+      ]
+    }
+  ],
+  "ground_selection_rule": "accepted = tilt<=max_tilt AND |height-expected|<=tol AND inliers>=min AND area>=min; best accepted = most inliers (the largest plane overall is NOT preferred)",
+  "gravity_prior": "base_link +z via T_base_camera (assumes a level robot base)",
+  "pose_source": "supplied",
+  "calibration_id": "proc_013-cam-v1"
+}

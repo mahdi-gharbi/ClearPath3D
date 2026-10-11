@@ -1,0 +1,60 @@
+{
+  "sequence_id": "no_ground",
+  "frame_id": "000000",
+  "timestamp_s": 0.0,
+  "config_hash": "e5e55d9eeb03099d",
+  "pose_status": "supplied",
+  "ground_status": "unavailable",
+  "output_frame": "map",
+  "ground_plane": null,
+  "detections": [
+    {
+      "detection_id": 0,
+      "frame_id": "map",
+      "center_m": [
+        3.838,
+        0.9982,
+        1.4467
+      ],
+      "visible_extent_m": [
+        0.148,
+        2.0021,
+        1.1056
+      ],
+      "min_m": [
+        3.764,
+        -0.0029,
+        0.894
+      ],
+      "max_m": [
+        3.912,
+        1.9992,
+        1.9995
+      ],
+      "point_count": 4719,
+      "semantic_label": null
+    }
+  ],
+  "tracks": [],
+  "occupancy_version": 0,
+  "warnings": [
+    "ground unavailable: no traversability is asserted; obstacle heights are relative to the calibrated base frame (cand0: tilt 90.0 deg > 12.0, height n/a not within 0.1 m of 0.0 m; cand1: tilt 89.9 deg > 12.0, height n/a not within 0.1 m of 0.0 m, inliers 133 < 200, observed area 0.13 m2 < 0.25)"
+  ],
+  "timings_ms": {
+    "backproject": 7.681,
+    "voxel_downsample": 53.597,
+    "outliers": 0.037,
+    "normals": 14.022,
+    "ground": 56.869,
+    "cluster": 19.139,
+    "boxes": 1.32
+  },
+  "stats": {
+    "valid_depth_fraction": 0.93542,
+    "points_backprojected": 71840.0,
+    "points_downsampled": 7069.0,
+    "points_outlier": 0.0,
+    "points_ground": 0.0,
+    "points_obstacle": 4719.0
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "sequence_id": "proc_108",
+  "frame_id": "000000",
+  "timestamp_s": 0.0,
+  "config_hash": "e5e55d9eeb03099d",
+  "pose_status": "supplied",
+  "ground_status": "found",
+  "output_frame": "map",
+  "ground_plane": {
+    "frame_id": "map",
+    "normal": [
+      -0.001485,
+      -0.000882,
+      0.999999
+    ],
+    "offset": 0.005476,
+    "inlier_count": 5634,
+    "residual_m": 0.00397,
+    "support_area_m2": 3.1125,
+    "tilt_deg": 0.099
+  },
+  "detections": [
+    {
+      "detection_id": 0,
+      "frame_id": "map",
+      "center_m": [
+        2.0256,
+        2.9723,
+        0.134
+      ],
+      "visible_extent_m": [
+        0.4779,
+        0.2243,
+        0.1864
+      ],
+      "min_m": [
+        1.7867,
+        2.8602,
+        0.0408
+      ],
+      "max_m": [
+        2.2645,
+        3.0845,
+        0.2272
+      ],
+      "point_count": 345,
+      "semantic_label": null
+    },
+    {
+      "detection_id": 1,
+      "frame_id": "map",
+      "center_m": [
+        2.8262,
+        3.1824,
+        0.731
+      ],
+      "visible_extent_m": [
+        3.3408,
+        1.0715,
+        1.3804
+      ],
+      "min_m": [
+        1.1558,
+        2.6467,
+        0.0408
+      ],
+      "max_m": [
+        4.4966,
+        3.7181,
+        1.4212
+      ],
+      "point_count": 10452,
+      "semantic_label": null
+    },
+    {
+      "detection_id": 2,
+      "frame_id": "map",
+      "center_m": [
+        2.9496,
+        3.0556,
+        0.1803
+      ],
+      "visible_extent_m": [
+        0.4536,
+        0.2422,
+        0.2767
+      ],
+      "min_m": [
+        2.7228,
+        2.9345,
+        0.0419
+      ],
+      "max_m": [
+        3.1764,
+        3.1767,
+        0.3187
+      ],
+      "point_count": 413,
+      "semantic_label": null
+    }
+  ],
+  "tracks": [],
+  "occupancy_version": 0,
+  "warnings": [],
+  "timings_ms": {
+    "backproject": 5.558,
+    "voxel_downsample": 42.677,
+    "outliers": 0.025,
+    "normals": 21.79,
+    "ground": 161.333,
+    "cluster": 50.88,
+    "boxes": 2.192
+  },
+  "stats": {
+    "valid_depth_fraction": 0.99079,
+    "points_backprojected": 76093.0,
+    "points_downsampled": 17233.0,
+    "points_outlier": 0.0,
+    "points_ground": 5634.0,
+    "points_obstacle": 11210.0
+  }
+}

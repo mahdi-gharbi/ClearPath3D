@@ -1,0 +1,110 @@
+{
+  "scene": "room_scan",
+  "detector": "ORACLE (simulator instance masks) - not a detector result",
+  "lifting_ablation": {
+    "mask_dilate0px/mask/erode0px": {
+      "lifted": 21,
+      "purity_median": 1.0,
+      "purity_p10": 1.0,
+      "iou_visible_median": 0.7078
+    },
+    "mask_dilate0px/mask/erode2px": {
+      "lifted": 21,
+      "purity_median": 1.0,
+      "purity_p10": 1.0,
+      "iou_visible_median": 0.5252
+    },
+    "mask_dilate0px/bbox": {
+      "lifted": 21,
+      "purity_median": 0.7498,
+      "purity_p10": 0.2444,
+      "iou_visible_median": 0.0927
+    },
+    "mask_dilate0px/bbox_depth_filter": {
+      "lifted": 21,
+      "purity_median": 0.8538,
+      "purity_p10": 0.246,
+      "iou_visible_median": 0.4832
+    },
+    "mask_dilate4px/mask/erode0px": {
+      "lifted": 21,
+      "purity_median": 0.7648,
+      "purity_p10": 0.589,
+      "iou_visible_median": 0.0875
+    },
+    "mask_dilate4px/mask/erode2px": {
+      "lifted": 21,
+      "purity_median": 0.8682,
+      "purity_p10": 0.7388,
+      "iou_visible_median": 0.1154
+    },
+    "mask_dilate4px/bbox": {
+      "lifted": 21,
+      "purity_median": 0.574,
+      "purity_p10": 0.2277,
+      "iou_visible_median": 0.0746
+    },
+    "mask_dilate4px/bbox_depth_filter": {
+      "lifted": 21,
+      "purity_median": 0.812,
+      "purity_p10": 0.2281,
+      "iou_visible_median": 0.4832
+    }
+  },
+  "geometry_unchanged_with_semantics": true,
+  "tracks": {
+    "total": 18,
+    "labelled": 6,
+    "correct": 6,
+    "wrong": 0,
+    "labelled_but_no_object": 0,
+    "unlabelled_on_objects": 5,
+    "unlabelled_structure": 7
+  },
+  "snapshot_labels_last_frame": [
+    [
+      0,
+      "table"
+    ],
+    [
+      1,
+      "table"
+    ],
+    [
+      5,
+      null
+    ],
+    [
+      6,
+      null
+    ],
+    [
+      7,
+      null
+    ],
+    [
+      8,
+      null
+    ],
+    [
+      9,
+      null
+    ],
+    [
+      10,
+      "box"
+    ],
+    [
+      11,
+      "box"
+    ],
+    [
+      13,
+      "table"
+    ],
+    [
+      17,
+      null
+    ]
+  ]
+}

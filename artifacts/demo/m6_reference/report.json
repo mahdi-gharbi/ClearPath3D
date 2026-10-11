@@ -1,0 +1,213 @@
+{
+  "protocol": "M6 (optional research): ICP odometry experiment \u2014 baseline, ablations, failure case, map safety.\n\nReference poses: simulator GT (synthetic) or the dataset trajectory (Redwood). Alignment: first frame.\nMap experiment: only the first pose is supplied (gauge anchor); all later poses are estimated.",
+  "params_default": {
+    "voxel_sizes_m": [
+      0.2,
+      0.08,
+      0.04,
+      0.02
+    ],
+    "max_iterations": [
+      30,
+      30,
+      20,
+      15
+    ],
+    "corr_factor": 3.0,
+    "method": "point_to_plane",
+    "robust_kernel": "tukey",
+    "tukey_k_factor": 1.0,
+    "init": "constant_velocity",
+    "min_fitness": 0.3,
+    "max_inlier_rmse_m": 0.03,
+    "max_translation_m": 0.5,
+    "max_rotation_deg": 35.0,
+    "max_range_m": 4.0,
+    "max_consecutive_rejections": 10,
+    "max_deviation_from_prediction_m": 0.1,
+    "min_p2plane_information": 0.03,
+    "global_fallback": true,
+    "fpfh_voxel_m": 0.05
+  },
+  "room_scan_dense_ablation": {
+    "icp_full": {
+      "alignment": "first frame",
+      "frames_estimated": 83,
+      "frames_total": 121,
+      "ate_rmse_m": 0.0116,
+      "ate_max_m": 0.0172,
+      "rpe_trans_rmse_m": 0.0014,
+      "rpe_rot_rmse_deg": 0.042,
+      "ms_per_frame": 1034.4,
+      "first_rejection": {
+        "frame": "000050",
+        "reasons": [
+          "translation weakly constrained (p2plane information 0.013)"
+        ]
+      },
+      "tracking_lost": true
+    },
+    "no_degeneracy_gate": {
+      "alignment": "first frame",
+      "frames_estimated": 116,
+      "frames_total": 121,
+      "ate_rmse_m": 0.4677,
+      "ate_max_m": 0.7831,
+      "rpe_trans_rmse_m": 0.0717,
+      "rpe_rot_rmse_deg": 0.053,
+      "ms_per_frame": 926.1,
+      "first_rejection": {
+        "frame": "000073",
+        "reasons": [
+          "0.16 m from every motion hypothesis"
+        ]
+      },
+      "tracking_lost": false
+    },
+    "no_motion_gate": {
+      "alignment": "first frame",
+      "frames_estimated": 83,
+      "frames_total": 121,
+      "ate_rmse_m": 0.0116,
+      "ate_max_m": 0.0172,
+      "rpe_trans_rmse_m": 0.0014,
+      "rpe_rot_rmse_deg": 0.042,
+      "ms_per_frame": 1023.6,
+      "first_rejection": {
+        "frame": "000050",
+        "reasons": [
+          "translation weakly constrained (p2plane information 0.013)"
+        ]
+      },
+      "tracking_lost": true
+    },
+    "no_gates": {
+      "alignment": "first frame",
+      "frames_estimated": 121,
+      "frames_total": 121,
+      "ate_rmse_m": 0.3211,
+      "ate_max_m": 0.5738,
+      "rpe_trans_rmse_m": 0.0406,
+      "rpe_rot_rmse_deg": 0.052,
+      "ms_per_frame": 870.2,
+      "first_rejection": null,
+      "tracking_lost": false
+    },
+    "fine_pyramid_only": {
+      "alignment": "first frame",
+      "frames_estimated": 95,
+      "frames_total": 121,
+      "ate_rmse_m": 0.0106,
+      "ate_max_m": 0.0154,
+      "rpe_trans_rmse_m": 0.0014,
+      "rpe_rot_rmse_deg": 0.052,
+      "ms_per_frame": 1150.9,
+      "first_rejection": {
+        "frame": "000050",
+        "reasons": [
+          "translation weakly constrained (p2plane information 0.002)"
+        ]
+      },
+      "tracking_lost": false
+    },
+    "point_to_point": {
+      "alignment": "first frame",
+      "frames_estimated": 79,
+      "frames_total": 121,
+      "ate_rmse_m": 0.4598,
+      "ate_max_m": 1.6109,
+      "rpe_trans_rmse_m": 0.0325,
+      "rpe_rot_rmse_deg": 5.234,
+      "ms_per_frame": 1322.2,
+      "first_rejection": {
+        "frame": "000050",
+        "reasons": [
+          "translation weakly constrained (p2plane information 0.005)"
+        ]
+      },
+      "tracking_lost": true
+    },
+    "baseline_static_pose": {
+      "alignment": "first frame",
+      "frames_estimated": 121,
+      "frames_total": 121,
+      "ate_rmse_m": 1.4279,
+      "ate_max_m": 2.6234,
+      "rpe_trans_rmse_m": 0.0433,
+      "rpe_rot_rmse_deg": 7.478
+    }
+  },
+  "low_overlap_failure_case": [
+    {
+      "frame_id": "000000",
+      "accepted": true,
+      "reasons": null
+    },
+    {
+      "frame_id": "000001",
+      "accepted": true,
+      "reasons": []
+    },
+    {
+      "frame_id": "000002",
+      "accepted": false,
+      "reasons": [
+        "translation 2.20 m > 0.5",
+        "rotation 116.8 deg > 35.0",
+        "translation weakly constrained (p2plane information 0.018)"
+      ]
+    },
+    {
+      "frame_id": "000003",
+      "accepted": false,
+      "reasons": [
+        "translation 1.85 m > 0.5"
+      ]
+    },
+    {
+      "frame_id": "000004",
+      "accepted": false,
+      "reasons": [
+        "translation 1.25 m > 0.5"
+      ]
+    },
+    {
+      "frame_id": "000005",
+      "accepted": false,
+      "reasons": [
+        "translation 1.21 m > 0.5"
+      ]
+    }
+  ],
+  "redwood_sample": {
+    "alignment": "first frame",
+    "frames_estimated": 5,
+    "frames_total": 5,
+    "ate_rmse_m": 0.0147,
+    "ate_max_m": 0.026,
+    "rpe_trans_rmse_m": 0.008,
+    "rpe_rot_rmse_deg": 0.286,
+    "ms_per_frame": 821.2,
+    "note": "real data, 5 frames; reference = dataset trajectory.log"
+  },
+  "map_with_estimated_poses": {
+    "supplied": {
+      "frames_in_map": 121,
+      "coverage_free": 0.6471,
+      "false_free_cells": 0,
+      "unsafe_traversable_cells": 0
+    },
+    "icp_full": {
+      "frames_in_map": 83,
+      "coverage_free": 0.582,
+      "false_free_cells": 0,
+      "unsafe_traversable_cells": 0
+    },
+    "no_gates": {
+      "frames_in_map": 121,
+      "coverage_free": 0.6083,
+      "false_free_cells": 66,
+      "unsafe_traversable_cells": 203
+    }
+  }
+}

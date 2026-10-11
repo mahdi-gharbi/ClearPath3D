@@ -1,0 +1,27 @@
+{
+  "sequence": "no_ground",
+  "frame_id": "000000",
+  "pose_source": "supplied",
+  "output_frame": "map",
+  "config_hash": "e5e55d9eeb03099d",
+  "notes": [
+    "Point-level ground labels use one representative pixel per 3 cm voxel.",
+    "Obstacle boxes are compared to the VISIBLE part of each object (from clean GT depth); IoU against the full object box is reported separately and is expected to be lower."
+  ],
+  "ground": {
+    "status": "unavailable",
+    "gt_floor_points": 0,
+    "pred_ground_points": 0,
+    "precision": null,
+    "recall": null
+  },
+  "obstacles": [],
+  "detections": [
+    {
+      "detection_id": 0,
+      "majority_category": "wall",
+      "majority_fraction": 1.0
+    }
+  ],
+  "detections_on_floor": 0
+}

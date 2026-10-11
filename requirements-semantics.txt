@@ -1,0 +1,5 @@
+# Optional semantics (M6): CPU PyTorch from the official index. Tested versions.
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu

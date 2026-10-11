@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clearpath3d"
+version = "0.0.1"
+description = "RGB-D spatial scene inspector: ground, obstacles, observed/unknown space and simulated path planning."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "open3d==0.19.0",  # 0.20.0 Windows wheel: ScalableTSDFVolume/VoxelBlockGrid integrate nothing (D13)
+    "pydantic>=2.5",
+    "typer>=0.9",
+    "pyyaml>=6",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4", "httpx>=0.27"]
+api = ["fastapi>=0.110", "uvicorn[standard]>=0.29"]
+semantics = ["torch>=2.2", "torchvision>=0.17"]  # see requirements-semantics.txt (CPU index)
+
+[project.scripts]
+clearpath3d = "clearpath3d.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --basetemp=.pytest_tmp"
+pythonpath = ["apps/api", "ros2_ws/src/clearpath3d_ros"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY"]
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 115  # long comments/messages; the formatter wraps code at 100
+
+[tool.ruff.lint.per-file-ignores]
+"src/clearpath3d/cli.py" = ["B008"]  # typer.Option defaults are the library idiom

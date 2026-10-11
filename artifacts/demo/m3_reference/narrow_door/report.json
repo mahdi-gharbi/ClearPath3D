@@ -1,0 +1,374 @@
+{
+  "scene": "narrow_door",
+  "pose_source": "supplied",
+  "robot": {
+    "radius_m": 0.25,
+    "height_m": 0.4,
+    "margin_m": 0.05
+  },
+  "config_hash": "e5e55d9eeb03099d",
+  "final": {
+    "map": {
+      "traversable_cells": 1623,
+      "unsafe_traversable_cells": 0,
+      "t_s": 3.2,
+      "cells_gt_free": 9405,
+      "cells_gt_occupied": 1011,
+      "confusion": {
+        "free": {
+          "gt_free": 4055,
+          "gt_occupied": 0
+        },
+        "occupied": {
+          "gt_free": 203,
+          "gt_occupied": 254
+        },
+        "unknown": {
+          "gt_free": 5147,
+          "gt_occupied": 757
+        }
+      },
+      "coverage_free": 0.4312,
+      "false_free_cells": 0,
+      "false_free_rate": 0.0,
+      "occupied_precision_within_1_cell": 0.9783,
+      "occupied_precision": 0.5522,
+      "notes": "occupied precision is penalised by obstacle cells observed slightly outside the exact GT footprint (voxel discretisation, 5 cm); false free is the safety-relevant number"
+    },
+    "map_counts": {
+      "occupied": 460,
+      "free": 4055,
+      "unknown": 23985
+    },
+    "plans": {
+      "door_wide_robot": {
+        "success": false,
+        "cause": "goal_footprint_blocked",
+        "message": "the robot footprint at the goal would overlap obstacle",
+        "path_m": [],
+        "length_m": 0.0,
+        "expanded": 0,
+        "map_version": 34,
+        "margin_cells": 0,
+        "robot": {
+          "radius_m": 0.25,
+          "height_m": 0.4,
+          "margin_m": 0.05
+        }
+      },
+      "door_small_robot": {
+        "success": true,
+        "cause": "ok",
+        "message": "path found in observed free space",
+        "path_m": [
+          [
+            0.625,
+            2.375
+          ],
+          [
+            3.975,
+            2.375
+          ]
+        ],
+        "length_m": 3.35,
+        "expanded": 2254,
+        "map_version": 34,
+        "margin_cells": 2,
+        "robot": {
+          "radius_m": 0.1,
+          "height_m": 0.4,
+          "margin_m": 0.02
+        },
+        "gt_check": {
+          "collisions": 0,
+          "collided_with": [],
+          "min_clearance_m": 0.175
+        }
+      },
+      "corridor_wide_robot": {
+        "success": false,
+        "cause": "blocked_by_unknown",
+        "message": "no path through observed free space; a path may exist through unobserved space - observe more",
+        "path_m": [],
+        "length_m": 0.0,
+        "expanded": 1552,
+        "map_version": 34,
+        "margin_cells": 0,
+        "robot": {
+          "radius_m": 0.25,
+          "height_m": 0.4,
+          "margin_m": 0.05
+        }
+      }
+    }
+  },
+  "changes": [],
+  "tracks_final": [
+    {
+      "track_id": 0,
+      "first_seen_s": 0.0,
+      "last_seen_s": 1.4000000000000001,
+      "center_m": [
+        2.6103,
+        2.8537,
+        0.285
+      ],
+      "velocity_m_s": [
+        0.0002,
+        -0.0001,
+        -0.0001
+      ],
+      "covariance": [
+        [
+          0.259013,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.259013,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.259013
+        ]
+      ],
+      "visible_extent_m": [
+        0.1018,
+        0.0836,
+        0.6611
+      ],
+      "point_count": 127,
+      "lifecycle": "occluded",
+      "semantic_label": null,
+      "evidence_frame_ids": [
+        "000000",
+        "000001",
+        "000002",
+        "000003",
+        "000006",
+        "000007"
+      ]
+    },
+    {
+      "track_id": 3,
+      "first_seen_s": 0.0,
+      "last_seen_s": 0.4,
+      "center_m": [
+        2.5439,
+        3.5325,
+        0.3117
+      ],
+      "velocity_m_s": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          1.194079,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.194079,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.194079
+        ]
+      ],
+      "visible_extent_m": [
+        0.0861,
+        0.0557,
+        0.54
+      ],
+      "point_count": 105,
+      "lifecycle": "occluded",
+      "semantic_label": null,
+      "evidence_frame_ids": [
+        "000000",
+        "000001",
+        "000002"
+      ]
+    },
+    {
+      "track_id": 4,
+      "first_seen_s": 0.0,
+      "last_seen_s": 0.4,
+      "center_m": [
+        3.686,
+        3.7052,
+        0.331
+      ],
+      "velocity_m_s": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          1.194079,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.194079,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.194079
+        ]
+      ],
+      "visible_extent_m": [
+        0.5145,
+        0.6968,
+        0.5668
+      ],
+      "point_count": 1286,
+      "lifecycle": "occluded",
+      "semantic_label": null,
+      "evidence_frame_ids": [
+        "000000",
+        "000001",
+        "000002"
+      ]
+    },
+    {
+      "track_id": 6,
+      "first_seen_s": 0.6000000000000001,
+      "last_seen_s": 1.0,
+      "center_m": [
+        2.5017,
+        0.8211,
+        0.1748
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          0.713427,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.713427,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.713427
+        ]
+      ],
+      "visible_extent_m": [
+        0.4236,
+        0.3264,
+        0.2633
+      ],
+      "point_count": 572,
+      "lifecycle": "occluded",
+      "semantic_label": null,
+      "evidence_frame_ids": [
+        "000003",
+        "000004",
+        "000005"
+      ]
+    },
+    {
+      "track_id": 8,
+      "first_seen_s": 3.2,
+      "last_seen_s": 3.2,
+      "center_m": [
+        6.0048,
+        2.0695,
+        0.5376
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          0.0025,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0025,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0025
+        ]
+      ],
+      "visible_extent_m": [
+        0.0994,
+        0.1318,
+        0.9898
+      ],
+      "point_count": 241,
+      "lifecycle": "tentative",
+      "semantic_label": null,
+      "evidence_frame_ids": [
+        "000016"
+      ]
+    }
+  ],
+  "tracks_retired": 4,
+  "dynamic_track_ids": [],
+  "floor_z_estimate_m": -0.0024020298040596084,
+  "timing_per_frame": {
+    "n": 17,
+    "p50_ms": 692.881,
+    "p95_ms": 909.04,
+    "max_ms": 910.308
+  },
+  "timing_breakdown_last_frame_ms": {
+    "analyze.backproject": 7.41,
+    "analyze.voxel_downsample": 41.296,
+    "analyze.outliers": 0.023,
+    "analyze.normals": 11.496,
+    "analyze.ground": 59.092,
+    "analyze.cluster": 21.418,
+    "analyze.boxes": 1.252,
+    "tracking": 1.058,
+    "evidence": 301.214,
+    "tsdf": 8.353,
+    "total": 453.82
+  },
+  "memory": {
+    "before": {
+      "rss_mb": 163.6,
+      "peak_working_set_mb": 354.1
+    },
+    "after": {
+      "rss_mb": 291.2,
+      "peak_working_set_mb": 354.1
+    }
+  },
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "logical_cpus": 8,
+    "ram_gb": 19.8,
+    "os": "Windows 10"
+  },
+  "frames": 17,
+  "tsdf_frames_integrated": 17
+}

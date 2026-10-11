@@ -1,0 +1,102 @@
+{
+  "room_clear": {
+    "ground_status": "found",
+    "ground": {
+      "status": "found",
+      "gt_floor_points": 10084,
+      "pred_ground_points": 10124,
+      "precision": 0.992,
+      "recall": 0.9959,
+      "normal_error_deg": 0.115,
+      "height_error_at_robot_m": 0.0023,
+      "pred_ground_on_wall_fraction": 0.0073
+    },
+    "detections": 8,
+    "obstacles": [
+      {
+        "object": "table",
+        "iou_visible": 0.9045,
+        "center_error_visible_m": 0.0262,
+        "iou_full_object": 0.4593
+      },
+      {
+        "object": "box_a",
+        "iou_visible": 0.7633,
+        "center_error_visible_m": 0.0241,
+        "iou_full_object": 0.7635
+      },
+      {
+        "object": "box_b",
+        "iou_visible": 0.808,
+        "center_error_visible_m": 0.0224,
+        "iou_full_object": 0.8082
+      }
+    ],
+    "warnings": [],
+    "timings_ms": {
+      "backproject": 4.69,
+      "voxel_downsample": 45.08,
+      "outliers": 0.037,
+      "normals": 42.398,
+      "ground": 448.009,
+      "cluster": 57.995,
+      "boxes": 2.715
+    }
+  },
+  "dominant_wall": {
+    "ground_status": "found",
+    "ground": {
+      "status": "found",
+      "gt_floor_points": 1433,
+      "pred_ground_points": 1403,
+      "precision": 0.9957,
+      "recall": 0.9749,
+      "normal_error_deg": 0.371,
+      "height_error_at_robot_m": 0.009,
+      "pred_ground_on_wall_fraction": 0.0043
+    },
+    "detections": 2,
+    "obstacles": [
+      {
+        "object": "box_a",
+        "iou_visible": 0.8301,
+        "center_error_visible_m": 0.0227,
+        "iou_full_object": 0.8283
+      }
+    ],
+    "warnings": [],
+    "timings_ms": {
+      "backproject": 6.535,
+      "voxel_downsample": 45.415,
+      "outliers": 0.025,
+      "normals": 9.498,
+      "ground": 57.427,
+      "cluster": 14.881,
+      "boxes": 1.225
+    }
+  },
+  "no_ground": {
+    "ground_status": "unavailable",
+    "ground": {
+      "status": "unavailable",
+      "gt_floor_points": 0,
+      "pred_ground_points": 0,
+      "precision": null,
+      "recall": null
+    },
+    "detections": 1,
+    "obstacles": [],
+    "warnings": [
+      "ground unavailable: no traversability is asserted; obstacle heights are relative to the calibrated base frame (cand0: tilt 90.0 deg > 12.0, height n/a not within 0.1 m of 0.0 m; cand1: tilt 89.9 deg > 12.0, height n/a not within 0.1 m of 0.0 m, inliers 133 < 200, observed area 0.13 m2 < 0.25)"
+    ],
+    "timings_ms": {
+      "backproject": 7.681,
+      "voxel_downsample": 53.597,
+      "outliers": 0.037,
+      "normals": 14.022,
+      "ground": 56.869,
+      "cluster": 19.139,
+      "boxes": 1.32
+    }
+  }
+}

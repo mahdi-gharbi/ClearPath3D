@@ -1,0 +1,375 @@
+{
+  "rows": [
+    {
+      "scene": "hidden_box",
+      "policy": "nbv",
+      "seed": 0,
+      "views_done": 8,
+      "stop_status": "no_informative_candidate",
+      "coverage_initial": 0.5912,
+      "coverage_final": 0.8752,
+      "coverage_gain": 0.284,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 9.627,
+      "gain_per_m": 0.0295,
+      "hidden_objects": {
+        "cabinet": {
+          "occupied": 0.22,
+          "unknown": 0.773
+        },
+        "box_a": {
+          "occupied": 0.873,
+          "unknown": 0.127
+        },
+        "box_b": {
+          "occupied": 0.889,
+          "unknown": 0.095
+        },
+        "hidden": {
+          "occupied": 0.0,
+          "unknown": 1.0
+        }
+      }
+    },
+    {
+      "scene": "hidden_box",
+      "policy": "random",
+      "seed": 0,
+      "views_done": 10,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.5912,
+      "coverage_final": 0.7508,
+      "coverage_gain": 0.1596,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 14.075,
+      "gain_per_m": 0.0113,
+      "hidden_objects": {
+        "cabinet": {
+          "occupied": 0.224,
+          "unknown": 0.769
+        },
+        "box_a": {
+          "occupied": 0.873,
+          "unknown": 0.127
+        },
+        "box_b": {
+          "occupied": 0.873,
+          "unknown": 0.111
+        },
+        "hidden": {
+          "occupied": 0.028,
+          "unknown": 0.972
+        }
+      }
+    },
+    {
+      "scene": "hidden_box",
+      "policy": "nbv",
+      "seed": 1,
+      "views_done": 10,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.5919,
+      "coverage_final": 0.8795,
+      "coverage_gain": 0.2876,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 9.708,
+      "gain_per_m": 0.0296,
+      "hidden_objects": {
+        "cabinet": {
+          "occupied": 0.22,
+          "unknown": 0.773
+        },
+        "box_a": {
+          "occupied": 0.841,
+          "unknown": 0.159
+        },
+        "box_b": {
+          "occupied": 0.952,
+          "unknown": 0.016
+        },
+        "hidden": {
+          "occupied": 0.0,
+          "unknown": 1.0
+        }
+      }
+    },
+    {
+      "scene": "hidden_box",
+      "policy": "random",
+      "seed": 1,
+      "views_done": 10,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.5919,
+      "coverage_final": 0.8227,
+      "coverage_gain": 0.2308,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 20.434,
+      "gain_per_m": 0.0113,
+      "hidden_objects": {
+        "cabinet": {
+          "occupied": 0.22,
+          "unknown": 0.773
+        },
+        "box_a": {
+          "occupied": 0.841,
+          "unknown": 0.159
+        },
+        "box_b": {
+          "occupied": 0.889,
+          "unknown": 0.111
+        },
+        "hidden": {
+          "occupied": 0.0,
+          "unknown": 1.0
+        }
+      }
+    },
+    {
+      "scene": "hidden_box",
+      "policy": "nbv",
+      "seed": 2,
+      "views_done": 10,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.5922,
+      "coverage_final": 0.8822,
+      "coverage_gain": 0.29,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 8.868,
+      "gain_per_m": 0.0327,
+      "hidden_objects": {
+        "cabinet": {
+          "occupied": 0.217,
+          "unknown": 0.776
+        },
+        "box_a": {
+          "occupied": 0.873,
+          "unknown": 0.127
+        },
+        "box_b": {
+          "occupied": 0.921,
+          "unknown": 0.063
+        },
+        "hidden": {
+          "occupied": 0.0,
+          "unknown": 1.0
+        }
+      }
+    },
+    {
+      "scene": "hidden_box",
+      "policy": "random",
+      "seed": 2,
+      "views_done": 10,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.5922,
+      "coverage_final": 0.8126,
+      "coverage_gain": 0.2204,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 14.549,
+      "gain_per_m": 0.0151,
+      "hidden_objects": {
+        "cabinet": {
+          "occupied": 0.22,
+          "unknown": 0.773
+        },
+        "box_a": {
+          "occupied": 0.968,
+          "unknown": 0.016
+        },
+        "box_b": {
+          "occupied": 0.952,
+          "unknown": 0.048
+        },
+        "hidden": {
+          "occupied": 0.0,
+          "unknown": 1.0
+        }
+      }
+    },
+    {
+      "scene": "narrow_door",
+      "policy": "nbv",
+      "seed": 0,
+      "views_done": 6,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.4312,
+      "coverage_final": 0.6441,
+      "coverage_gain": 0.2129,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 5.176,
+      "gain_per_m": 0.0411,
+      "hidden_objects": {
+        "table": {
+          "occupied": 0.036,
+          "unknown": 0.046
+        },
+        "box_a": {
+          "occupied": 0.863,
+          "unknown": 0.1
+        }
+      }
+    },
+    {
+      "scene": "narrow_door",
+      "policy": "random",
+      "seed": 0,
+      "views_done": 6,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.4312,
+      "coverage_final": 0.5777,
+      "coverage_gain": 0.1465,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 5.842,
+      "gain_per_m": 0.0251,
+      "hidden_objects": {
+        "table": {
+          "occupied": 0.036,
+          "unknown": 0.036
+        },
+        "box_a": {
+          "occupied": 0.887,
+          "unknown": 0.113
+        }
+      }
+    },
+    {
+      "scene": "narrow_door",
+      "policy": "nbv",
+      "seed": 1,
+      "views_done": 6,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.4317,
+      "coverage_final": 0.6444,
+      "coverage_gain": 0.2127,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 5.176,
+      "gain_per_m": 0.0411,
+      "hidden_objects": {
+        "table": {
+          "occupied": 0.033,
+          "unknown": 0.049
+        },
+        "box_a": {
+          "occupied": 0.863,
+          "unknown": 0.1
+        }
+      }
+    },
+    {
+      "scene": "narrow_door",
+      "policy": "random",
+      "seed": 1,
+      "views_done": 6,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.4317,
+      "coverage_final": 0.583,
+      "coverage_gain": 0.1513,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 7.515,
+      "gain_per_m": 0.0201,
+      "hidden_objects": {
+        "table": {
+          "occupied": 0.033,
+          "unknown": 0.154
+        },
+        "box_a": {
+          "occupied": 0.775,
+          "unknown": 0.2
+        }
+      }
+    },
+    {
+      "scene": "narrow_door",
+      "policy": "nbv",
+      "seed": 2,
+      "views_done": 6,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.4308,
+      "coverage_final": 0.6432,
+      "coverage_gain": 0.2124,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 5.176,
+      "gain_per_m": 0.041,
+      "hidden_objects": {
+        "table": {
+          "occupied": 0.036,
+          "unknown": 0.051
+        },
+        "box_a": {
+          "occupied": 0.875,
+          "unknown": 0.1
+        }
+      }
+    },
+    {
+      "scene": "narrow_door",
+      "policy": "random",
+      "seed": 2,
+      "views_done": 6,
+      "stop_status": "budget_exhausted",
+      "coverage_initial": 0.4308,
+      "coverage_final": 0.6135,
+      "coverage_gain": 0.1827,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "travel_total_m": 6.206,
+      "gain_per_m": 0.0294,
+      "hidden_objects": {
+        "table": {
+          "occupied": 0.028,
+          "unknown": 0.105
+        },
+        "box_a": {
+          "occupied": 0.8,
+          "unknown": 0.188
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "hidden_box": {
+      "coverage_gain_nbv_minus_random_per_seed": [
+        0.1244,
+        0.0568,
+        0.0696
+      ],
+      "mean_difference": 0.0836,
+      "bootstrap_95ci_over_seeds": [
+        0.0568,
+        0.1244
+      ],
+      "note": "bootstrap over seeds (sequence level), n = 3"
+    },
+    "narrow_door": {
+      "coverage_gain_nbv_minus_random_per_seed": [
+        0.0664,
+        0.0614,
+        0.0297
+      ],
+      "mean_difference": 0.0525,
+      "bootstrap_95ci_over_seeds": [
+        0.0297,
+        0.0664
+      ],
+      "note": "bootstrap over seeds (sequence level), n = 3"
+    }
+  },
+  "protocol": {
+    "policies": "nbv = best score; random = uniform over the SAME reachable candidates (seeded)",
+    "equal": "initial frames, number of views, per-view travel budget (max_travel_m), sensor-noise seed",
+    "metrics": "coverage_free = observed-free cells / GT free cells (2D); false free and unsafe cells; travel",
+    "planner_inputs": "observed voxel map only; simulator renders the chosen view; GT used for metrics only",
+    "n": "3 seeds per scene: too few for strong statistics; per-seed values are reported"
+  }
+}

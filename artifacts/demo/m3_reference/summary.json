@@ -1,0 +1,78 @@
+{
+  "room_scan": {
+    "final_map": {
+      "coverage_free": 0.6358,
+      "false_free_cells": 0,
+      "unsafe_traversable_cells": 0
+    },
+    "plans": {
+      "to_corridor": "ok",
+      "behind_table": "ok"
+    },
+    "timing_per_frame": {
+      "n": 31,
+      "p50_ms": 656.4,
+      "p95_ms": 966.951,
+      "max_ms": 986.776
+    }
+  },
+  "narrow_door": {
+    "final_map": {
+      "coverage_free": 0.4312,
+      "false_free_cells": 0,
+      "unsafe_traversable_cells": 0
+    },
+    "plans": {
+      "door_wide_robot": "goal_footprint_blocked",
+      "door_small_robot": "ok",
+      "corridor_wide_robot": "blocked_by_unknown"
+    },
+    "timing_per_frame": {
+      "n": 17,
+      "p50_ms": 692.881,
+      "p95_ms": 909.04,
+      "max_ms": 910.308
+    }
+  },
+  "hidden_box": {
+    "final_map": {
+      "coverage_free": 0.5912,
+      "false_free_cells": 0,
+      "unsafe_traversable_cells": 0
+    },
+    "plans": {
+      "to_hidden_box": "goal_unknown"
+    },
+    "timing_per_frame": {
+      "n": 31,
+      "p50_ms": 671.261,
+      "p95_ms": 959.796,
+      "max_ms": 1071.159
+    }
+  },
+  "moving_box": {
+    "final_map": {
+      "coverage_free": 0.4804,
+      "false_free_cells": 0,
+      "unsafe_traversable_cells": 0
+    },
+    "plans": {
+      "to_new_box_place": "goal_occupied"
+    },
+    "timing_per_frame": {
+      "n": 22,
+      "p50_ms": 726.941,
+      "p95_ms": 944.043,
+      "max_ms": 969.72
+    },
+    "at_frame_12": {
+      "map": {
+        "false_free_cells": 48,
+        "unsafe_traversable_cells": 91
+      },
+      "plans": {
+        "to_new_box_place": "blocked_by_unknown"
+      }
+    }
+  }
+}

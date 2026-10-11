@@ -1,0 +1,56 @@
+{
+  "version": "v1",
+  "created_utc": "2026-10-09T20:36:08+00:00",
+  "generator": "clearpath3d.datasets.procedural.build_procedural(seed)",
+  "splits": {
+    "dev": [
+      "proc_000",
+      "proc_001",
+      "proc_002",
+      "proc_003",
+      "proc_004",
+      "proc_005",
+      "proc_006",
+      "proc_007",
+      "proc_008",
+      "proc_009"
+    ],
+    "validation": [
+      "proc_010",
+      "proc_011",
+      "proc_012",
+      "proc_013",
+      "proc_014",
+      "proc_015",
+      "proc_016",
+      "proc_017",
+      "proc_018",
+      "proc_019"
+    ],
+    "test": [
+      "proc_100",
+      "proc_101",
+      "proc_102",
+      "proc_103",
+      "proc_104",
+      "proc_105",
+      "proc_106",
+      "proc_107",
+      "proc_108",
+      "proc_109",
+      "proc_110",
+      "proc_111",
+      "proc_112",
+      "proc_113",
+      "proc_114",
+      "proc_115",
+      "proc_116",
+      "proc_117",
+      "proc_118",
+      "proc_119"
+    ]
+  },
+  "config_hash_frozen": "e5e55d9eeb03099d",
+  "rule": "parameters may be changed after looking at dev/validation only; the test split is run once with the frozen config and reported as is",
+  "note": "seeds of different splits give disjoint geometries; no frame is shared between splits"
+}

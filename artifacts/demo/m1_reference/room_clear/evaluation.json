@@ -1,0 +1,120 @@
+{
+  "sequence": "room_clear",
+  "frame_id": "000000",
+  "pose_source": "supplied",
+  "output_frame": "map",
+  "config_hash": "e5e55d9eeb03099d",
+  "notes": [
+    "Point-level ground labels use one representative pixel per 3 cm voxel.",
+    "Obstacle boxes are compared to the VISIBLE part of each object (from clean GT depth); IoU against the full object box is reported separately and is expected to be lower."
+  ],
+  "ground": {
+    "status": "found",
+    "gt_floor_points": 10084,
+    "pred_ground_points": 10124,
+    "precision": 0.992,
+    "recall": 0.9959,
+    "normal_error_deg": 0.115,
+    "height_error_at_robot_m": 0.0023,
+    "pred_ground_on_wall_fraction": 0.0073
+  },
+  "obstacles": [
+    {
+      "object": "table",
+      "visible_pixels": 2446,
+      "visible_box_min": [
+        1.825,
+        2.65,
+        0.0
+      ],
+      "visible_box_max": [
+        2.988,
+        3.01,
+        0.75
+      ],
+      "matched_detection": 2,
+      "iou_visible": 0.9045,
+      "center_error_visible_m": 0.0262,
+      "iou_full_object": 0.4593
+    },
+    {
+      "object": "box_a",
+      "visible_pixels": 2032,
+      "visible_box_min": [
+        2.4,
+        1.05,
+        0.0
+      ],
+      "visible_box_max": [
+        2.799,
+        1.35,
+        0.3
+      ],
+      "matched_detection": 3,
+      "iou_visible": 0.7633,
+      "center_error_visible_m": 0.0241,
+      "iou_full_object": 0.7635
+    },
+    {
+      "object": "box_b",
+      "visible_pixels": 6634,
+      "visible_box_min": [
+        1.6,
+        1.55,
+        0.0
+      ],
+      "visible_box_max": [
+        2.0,
+        1.85,
+        0.3
+      ],
+      "matched_detection": 0,
+      "iou_visible": 0.808,
+      "center_error_visible_m": 0.0224,
+      "iou_full_object": 0.8082
+    }
+  ],
+  "detections": [
+    {
+      "detection_id": 0,
+      "majority_category": "box",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 1,
+      "majority_category": "table",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 2,
+      "majority_category": "table",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 3,
+      "majority_category": "box",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 4,
+      "majority_category": "wall",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 5,
+      "majority_category": "wall",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 6,
+      "majority_category": "wall",
+      "majority_fraction": 1.0
+    },
+    {
+      "detection_id": 7,
+      "majority_category": "wall",
+      "majority_fraction": 1.0
+    }
+  ],
+  "detections_on_floor": 0
+}

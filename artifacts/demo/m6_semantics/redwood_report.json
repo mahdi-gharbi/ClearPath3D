@@ -1,0 +1,136 @@
+{
+  "dataset": "Redwood sample (real, 5 frames)",
+  "detector": "torchvision_maskrcnn_resnet50_fpn_coco",
+  "score_threshold": 0.6,
+  "poses": "supplied (dataset trajectory)",
+  "frames": [
+    {
+      "frame_id": "000000",
+      "detections": [
+        [
+          "chair",
+          0.819
+        ]
+      ]
+    },
+    {
+      "frame_id": "000001",
+      "detections": [
+        [
+          "cat",
+          0.818
+        ]
+      ]
+    },
+    {
+      "frame_id": "000002",
+      "detections": []
+    },
+    {
+      "frame_id": "000003",
+      "detections": [
+        [
+          "chair",
+          0.892
+        ],
+        [
+          "chair",
+          0.685
+        ]
+      ]
+    },
+    {
+      "frame_id": "000004",
+      "detections": [
+        [
+          "chair",
+          0.654
+        ]
+      ]
+    }
+  ],
+  "consistency": {
+    "mask": {
+      "objects": 2,
+      "seen_in_2plus_frames": 1,
+      "median_centroid_spread_m": 0.1012,
+      "groups": [
+        {
+          "label": "chair",
+          "frames": 3,
+          "centroid_spread_m": 0.1012,
+          "extent_m_median": [
+            0.891,
+            0.642,
+            0.706
+          ]
+        },
+        {
+          "label": "cat",
+          "frames": 1,
+          "centroid_spread_m": 0.0,
+          "extent_m_median": [
+            0.482,
+            0.245,
+            0.506
+          ]
+        }
+      ]
+    },
+    "bbox": {
+      "objects": 2,
+      "seen_in_2plus_frames": 1,
+      "median_centroid_spread_m": 0.1201,
+      "groups": [
+        {
+          "label": "chair",
+          "frames": 3,
+          "centroid_spread_m": 0.1201,
+          "extent_m_median": [
+            0.881,
+            0.954,
+            0.74
+          ]
+        },
+        {
+          "label": "cat",
+          "frames": 1,
+          "centroid_spread_m": 0.0,
+          "extent_m_median": [
+            0.852,
+            0.354,
+            0.54
+          ]
+        }
+      ]
+    },
+    "bbox_depth_filter": {
+      "objects": 2,
+      "seen_in_2plus_frames": 1,
+      "median_centroid_spread_m": 0.2546,
+      "groups": [
+        {
+          "label": "chair",
+          "frames": 3,
+          "centroid_spread_m": 0.2546,
+          "extent_m_median": [
+            0.614,
+            0.748,
+            0.55
+          ]
+        },
+        {
+          "label": "cat",
+          "frames": 1,
+          "centroid_spread_m": 0.0,
+          "extent_m_median": [
+            0.546,
+            0.256,
+            0.544
+          ]
+        }
+      ]
+    }
+  },
+  "note": "no semantic ground truth: consistency only, not accuracy"
+}

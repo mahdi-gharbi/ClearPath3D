@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>clearpath3d_ros</name>
+  <version>0.1.0</version>
+  <description>ROS 2 replay adapter for the ClearPath3D core (PointCloud2, OccupancyGrid, MarkerArray, Path, tf2).</description>
+  <maintainer email="137292846+mahdi-gharbi@users.noreply.github.com">Mahdi Gharbi</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

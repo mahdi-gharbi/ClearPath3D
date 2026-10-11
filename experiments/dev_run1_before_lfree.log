@@ -1,0 +1,37 @@
+proc_000: m3={'coverage_free': 0.5586, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9689), 'replay_s_per_frame': 0.692} plan={'cause': 'blocked_by_unknown', 'leng
+proc_001: m3={'coverage_free': 0.6557, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9872), 'replay_s_per_frame': 0.722} plan={'cause': 'ok', 'length_m': 4.5551, '
+proc_002: m3={'coverage_free': 0.5627, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9973), 'replay_s_per_frame': 0.851} plan={'cause': 'blocked_by_unknown', 'leng
+proc_003: m3={'coverage_free': 0.6353, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9989), 'replay_s_per_frame': 1.185} plan={'cause': 'ok', 'length_m': 5.0187, '
+proc_004: m3={'coverage_free': 0.6516, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9926), 'replay_s_per_frame': 1.368} plan={'cause': 'ok', 'length_m': 4.75, 'do
+proc_005: m3={'coverage_free': 0.6502, 'false_free_cells': 2, 'unsafe_traversable_cells': 1, 'occupied_precision_within_1_cell': np.float64(1.0), 'replay_s_per_frame': 1.236} plan={'cause': 'ok', 'length_m': 4.45, 'door_
+proc_006: m3={'coverage_free': 0.6334, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(1.0), 'replay_s_per_frame': 1.263} plan={'cause': 'ok', 'length_m': 4.05, 'door_
+proc_007: m3={'coverage_free': 0.5723, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9935), 'replay_s_per_frame': 1.072} plan={'cause': 'goal_footprint_blocked', '
+proc_008: m3={'coverage_free': 0.6406, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9969), 'replay_s_per_frame': 1.236} plan={'cause': 'ok', 'length_m': 4.6, 'doo
+proc_009: m3={'coverage_free': 0.607, 'false_free_cells': 0, 'unsafe_traversable_cells': 0, 'occupied_precision_within_1_cell': np.float64(0.9918), 'replay_s_per_frame': 1.212} plan={'cause': 'ok', 'length_m': 4.521, 'do
+{
+  "scenes": 10,
+  "m1_ground_found": 10,
+  "m1_precision_median": 0.9964,
+  "m1_recall_median": 0.9915,
+  "m3_false_free_total": 2,
+  "m3_unsafe_total": 1,
+  "m3_coverage_median": 0.63435,
+  "plan_narrow_door_scenes": 3,
+  "plan_narrow_door_wrongly_ok": 0,
+  "plan_passable_door_scenes": 7,
+  "plan_passable_ok": 7,
+  "plan_passable_failure_causes": [],
+  "plan_gt_collisions": 0,
+  "m5_nbv_minus_random_mean": 0.1195,
+  "m5_bootstrap95_over_scenes": [
+    0.088,
+    0.1506
+  ],
+  "m5_nbv_better_scenes": 10,
+  "m5_nbv_false_free_max": 2,
+  "m5_nbv_unsafe_max": 1,
+  "m5_random_unsafe_max": 1,
+  "split": "dev",
+  "config_hash": "e5e55d9eeb03099d",
+  "code_fingerprint": "8e2ddb9a32d3c8f2"
+}

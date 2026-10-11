@@ -1,0 +1,50 @@
+{
+  "scene": "proc_013",
+  "layout": {
+    "rx": 6.166,
+    "ry": 4.395,
+    "partition_x": 4.109,
+    "door_y0": 1.417,
+    "door_w": 0.922,
+    "path_y": 1.976
+  },
+  "m1": {
+    "ground_status": "found",
+    "precision": 0.9979,
+    "recall": 0.9942,
+    "normal_error_deg": 0.162,
+    "height_error_at_robot_m": 0.0044,
+    "detections_on_floor": 0
+  },
+  "m3": {
+    "coverage_free": 0.6484,
+    "false_free_cells": 0,
+    "unsafe_traversable_cells": 0,
+    "occupied_precision_within_1_cell": 0.9977,
+    "replay_s_per_frame": 0.736
+  },
+  "plan": {
+    "cause": "ok",
+    "length_m": 4.5,
+    "door_passable_gt": true,
+    "gt_collisions": 0
+  },
+  "m5": {
+    "nbv": {
+      "coverage_gain": 0.1564,
+      "views": 4,
+      "travel_m": 6.532,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "stop": "budget"
+    },
+    "random": {
+      "coverage_gain": 0.06,
+      "views": 4,
+      "travel_m": 12.625,
+      "false_free_max": 0,
+      "unsafe_max": 0,
+      "stop": "budget"
+    }
+  }
+}
